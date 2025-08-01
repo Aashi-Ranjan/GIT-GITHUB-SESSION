@@ -1,0 +1,9 @@
+def read_csv(filename):
+    with open(filename, newline='', encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            print(row)
+
+# Example usage:
+if __name__ == "__main__":
+    read_csv('example.csv')
